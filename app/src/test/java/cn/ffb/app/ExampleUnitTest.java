@@ -1,4 +1,4 @@
-package cn.ffb.dialog;
+package cn.ffb.app;
 
 import org.junit.Test;
 
