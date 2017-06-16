@@ -1,7 +1,7 @@
 package cn.ffb.dialog.core;
 
 /**
- * @author   lingfei  2017/6/4.
+ * @author lingfei  2017/6/4.
  */
 
 public class DialogType {

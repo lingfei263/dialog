@@ -11,7 +11,7 @@ import android.widget.EditText;
 import cn.ffb.dialog.R;
 import cn.ffb.dialog.builder.EditTextDialogBuilder;
 import cn.ffb.dialog.core.DialogProvider;
-import cn.ffb.utils.EditTextUtils;
+import cn.ffb.dialog.utils.EditTextUtils;
 
 
 /**
@@ -28,15 +28,11 @@ public class EditTextDialogProvider extends DialogProvider<EditTextDialogBuilder
         View contentView = LayoutInflater.from(dialogBuilder.getContext())
                 .inflate(R.layout.comm_dialog_edittext, null, false);
         final EditText editText = (EditText) contentView.findViewById(R.id.edittext);
-//    CheckBox checkBox = (CheckBox) contentView.findViewById(R.id.checkbox);
-//    View checkBoxLayout = contentView.findViewById(R.id.layout_checkbox);
         AlertDialog.Builder builder = new AlertDialog.Builder(dialogBuilder.getContext())
                 .setTitle(dialogBuilder.getTitle()).setMessage(dialogBuilder.getMessage())
                 .setNegativeButton(dialogBuilder.getNegativeButtonText(),
                         dialogBuilder.getOnNegativeButtonClickListener())
                 .setPositiveButton(dialogBuilder.getPositiveButtonText(), null).setView(contentView);
-        // checkbox默认隐藏
-//    checkBox.setVisibility(View.GONE);
         // 调用控件初始化接口
         if (dialogBuilder.getOnEditTextDialogListener() != null) {
             dialogBuilder.getOnEditTextDialogListener().onEditTextCreated(editText);
