@@ -9,7 +9,7 @@ import android.widget.FrameLayout;
 import cn.ffb.dialog.R;
 import cn.ffb.dialog.builder.OtherDialogBuilder;
 import cn.ffb.dialog.core.DialogProvider;
-import cn.ffb.dialog.utils.DisplayUtils;
+import cn.ffb.utils.DisplayUtils;
 
 
 /**

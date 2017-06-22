@@ -11,7 +11,7 @@ import android.widget.EditText;
 import cn.ffb.dialog.R;
 import cn.ffb.dialog.builder.EditTextDialogBuilder;
 import cn.ffb.dialog.core.DialogProvider;
-import cn.ffb.dialog.utils.EditTextUtils;
+import cn.ffb.utils.EditTextUtils;
 
 
 /**
